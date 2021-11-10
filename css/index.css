@@ -1,0 +1,720 @@
+.header{
+	width: 100%;
+	height: 8.22rem;
+	background:linear-gradient(180deg,rgba(22,23,27,1) 0%,rgba(22,23,27,1) 100%);
+	position: relative;
+	overflow: hidden;
+}
+.header .middleContents{
+	width: 12rem;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+/* 头部背景 */
+.header .middleContents .bgSty{
+	width: 5.48rem;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.header .middleContents .bgSty .imgSty{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.header .middleContents .bgSty .maskSty{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+/* 头部正文 */
+.header .middleContents .headerContents{
+	width: 100%;
+	height: 100%;
+	padding-top: 1px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.logo{
+	width: 3.58rem;
+	height: 3.58rem;
+	position: absolute;
+	left: -1.5rem;
+    top: -1.05rem;
+}
+/* 选项卡与文案 */
+.gameInfo{
+	width: 100%;
+	height: 4.52rem;
+	box-sizing: border-box;
+	margin-top: 1.75rem;
+	position: relative;
+	z-index: 3;
+}
+.gameInfo .leftTab{
+	width: 6.98rem;
+	height: 100%;
+	float: left;
+	background-color: rgba(66, 86, 107, 1);
+}
+/* 选项卡头部 */
+.leftTabHeader{
+	width: 100%;
+	height: 0.46rem;
+}
+.leftTabHeader .tabItems{
+	width: 20%;
+	height: 100%;
+	box-sizing: border-box;
+	border: 1px solid rgba(29, 33, 37, 1);
+	border-bottom: 1px solid rgba(29, 33, 37, 1);
+	background-color:rgba(39, 65, 86, 1);
+	float: left;
+	cursor: pointer;
+	text-align: center;
+	line-height: 0.46rem;
+	padding: 0 0.05rem;
+}
+.leftTabHeader .tabActive{
+	border: 1px solid rgba(151, 151, 151, 0.58);
+	border-bottom: none;
+	background-color: rgba(66, 86, 107, 1);
+}
+/* 边框盒子 */
+.leftTabBorderBg{
+	width: 100%;
+	height: 4.04rem;
+	padding-top: 0.1rem;
+	position: relative;
+}
+.leftTabBorderBg .maskImg{
+	width: 100%;
+	height: 1.26rem;
+	background: url(../images/maskImg.png) no-repeat center;
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 5;
+}
+/* 中间的图片 */
+.imgBox{
+	width:6.8rem;
+	height:3.17rem;
+	margin: 0rem 0.1rem 0.16rem 0.1rem;
+	position: relative;
+}
+.gameImg{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 3;
+}
+.gameName{
+	width: 100%;
+	height: 0.3rem;
+	line-height:0.3rem;
+	font-size:0.22rem;
+	color:rgba(255,255,255,1);
+	letter-spacing:1px;
+	text-indent: 6px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 9;
+}
+/* 下面的折扣信息 */
+.footerInfo{
+	width: 6.74rem;
+	height: 0.42rem;
+	margin: 0 0.1rem 0 0.16rem;
+	position: relative;
+	z-index: 9;
+}
+.footerInfo .rebateBox{
+	width:0.84rem;
+	height:0.42rem;
+	font-size:0.22rem;
+	color:rgba(255,255,255,1);
+	line-height:0.42rem;
+	background:rgba(76, 107, 35, 0.8);
+	border-radius:0.05rem;
+	margin-right: 0.15rem;
+}
+.footerInfo .presentPriceBox{
+	height:0.42rem;
+	line-height:0.42rem;
+	font-size:0.24rem;
+	color:rgba(255,255,255,1);
+	margin-right: 0.1rem;
+}
+.footerInfo .originalPriceBox{
+	height:0.42rem;
+	line-height:0.42rem;
+	font-size:0.15rem;
+	color:rgba(255,255,255,0.6);
+}
+.footerInfo .lookMore{
+	width:1.63rem;
+	height:0.42rem;
+	line-height:0.42rem;
+	background:linear-gradient(270deg,rgba(41,84,197,1) 0%,rgba(49,175,255,1) 100%);
+	border-radius:3px;
+	font-size:0.15rem;
+	color:rgba(255,255,255,1);
+	cursor: pointer;
+}
+.border_left{
+	border-left: 1px solid rgba(151, 151, 151, 0.58);
+}
+.border_right{
+	border-right: 1px solid rgba(151, 151, 151, 0.58);
+}
+.border_top{
+	border-top: 1px solid rgba(151, 151, 151, 0.58);
+}
+.border_btm{
+	border-bottom: 1px solid rgba(151, 151, 151, 0.58);
+}
+/* 右边的文案 */
+.gameInfo .rightInfo{
+	width: 4.96rem;
+	height: 100%;
+	padding-left: 0.78rem;
+	float: left;
+}
+.gameInfo .rightInfo .editionBox {
+	width: 4.03rem;
+	height: 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.gameInfo .rightInfo .editionBox .edition {
+	width: 1rem;
+	height: 0.4rem;
+	font-size: 0.14rem;
+	line-height: 0.4rem;
+	color:  rgba(255,255,255,0.4);
+}
+.gameInfo .rightInfo .editionBox .downLoadErrBox {
+	width: 1.7rem;
+	height: 0.2rem;
+	font-size: 0.14rem;
+	color:  rgba(255,255,255,0.4);
+	cursor: pointer;
+	text-decoration:underline ;
+}
+.rightInfo .rightInfoText1{
+	font-size:0.3rem;
+	color:rgba(255,255,255,1);
+	line-height:0.4rem;
+	margin-top: 0.28rem;
+}
+.rightInfo .rightInfoText2{
+	width: 100%;
+	height: 0.4rem;
+	overflow: hidden;
+	margin-top: 0.45rem;
+}
+.rightInfo .rightInfoText2 .rightInfoText2Icon{
+	width: 0.26rem;
+	height: 0.26rem;
+	float: left;
+}
+.rightInfo .rightInfoText3{
+	width: 100%;
+	height: 0.4rem;
+	overflow: hidden;
+	margin-top: 0.28rem;
+}
+.rightInfo .rightInfoText3 .rightInfoText3Icon{
+	width: 0.26rem;
+	height: 0.26rem;
+	float: left;
+}
+.rightInfo .rightInfoText4{
+	width: 100%;
+	height: 0.4rem;
+	overflow: hidden;
+	margin-top: 0.28rem;
+}
+.rightInfo .rightInfoText4 .rightInfoText4Icon{
+	width: 0.26rem;
+	height: 0.26rem;
+	float: left;
+}
+.rightInfoText{
+	font-size: 0.2rem;
+	color:rgba(255,255,255,1);
+	font-weight: bold;
+	float: left;
+	margin-left: 0.13rem;
+}
+
+
+/* 中间的跑马灯效果 */
+.middleHorseRaceLamp{
+	width: 100%;
+	height: 5.29rem;
+	overflow: hidden;
+	background-color: rgba(38,40,47,1);
+}
+.middleHorseRaceLamp{
+	width: 100%;
+}
+.middleHorseRaceLamp .title{  /* 跑马灯标题 */
+	width: 4.14rem;
+	height: 0.42rem;
+	line-height: 0.42rem;
+	font-size: 0.3rem;
+	margin: 0.91rem auto 0.41rem;
+}
+.follow{
+	width: 100%;
+	height: 1.48rem;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 99;
+	background: url('../images/follow.png') no-repeat center;
+	background-size: cover;
+	overflow: hidden;
+}
+.follow .logoIcon{
+	width: 1.05rem;
+	height: 1.05rem;
+	/* background: url('../images/iconLogo.png') no-repeat center; */
+	background-size: cover;
+	margin-left: 3.65rem;
+	margin-top: 0.18rem;
+	position: relative;
+}
+.logoIcon img{
+	width: 1.05rem;
+	height: 1.05rem;
+	display: block;
+}
+.logoIconBg::before{
+	content: '';
+    width: 3.21rem;
+    height: 3.21rem;
+    display: block;
+	position: absolute;
+	background: url('../images/iconLogoBg.png');
+    left: -1.2rem;
+    top: -0.8rem;
+}
+.follow .downInfo{
+	margin-left: 0.31rem;
+	margin-top: 0.36rem;
+}
+.follow .downImg{
+	width:2.57rem;
+	height:0.8rem;
+	text-align: center;
+	line-height: 0.8rem;
+	font-size: 0.22rem;
+	font-weight: bold;
+	color: rgba(255,255,255,1);
+	background:linear-gradient(270deg,rgba(41,84,197,1) 0%,rgba(49,175,255,1) 100%);
+	background-size: cover;
+	margin-left: 4.06rem;
+	margin-top: 0.34rem;
+	cursor: pointer;
+}
+
+.middleHorseRaceLamp .horseRaceLamp{  /* 跑马灯效果盒子 */
+	width: 100%;
+	height: 3.49rem;
+	position: relative;
+} 
+.middleHorseRaceLamp .horseRaceLampContents{  /* 跑马灯内容盒子 */
+	
+}
+.middleHorseRaceLamp .horseRaceLampBgMask{ /* 跑马灯遮罩盒子 */
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: -0.02rem;
+	z-index: 9;
+	background: url(../images/horseRaceLampBgMask.png) no-repeat center;
+	background-size: cover;
+}
+
+/* 中间的展示信息 */
+.revealInfo{
+	width: 100%;
+	height: 13.89rem;
+	overflow: hidden;
+	background:#26282F url(../images/revealInfoBg.png) no-repeat center;
+	background-size: cover;
+}
+.revealInfo .down2{
+	margin: 0.2rem auto 0;
+}
+.revealInfo .revealInfoItem{
+	width: 12.83rem;
+	height: 5.37rem;
+	margin: 5.52rem 0 0 3.64rem;
+}
+.revealInfo .revealInfoItem .revealInfoItemLeft{
+	width: 7.33rem;
+	height: 100%;
+}
+.revealInfo .revealInfoItem .revealInfoItemRight{
+	width: 5.47rem;
+	height: 100%;
+	overflow: hidden;
+}
+.revealInfo .revealInfoItem .revealInfoItemRight .text1{
+	font-size:0.3rem;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	line-height:0.42rem;
+	text-align: right;
+	margin-top: 1.24rem;
+}
+.revealInfo .revealInfoItem .revealInfoItemRight .text2{
+	font-size:0.2rem;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	line-height:0.28rem;
+	text-align: right;
+	margin-top: 0.19rem;
+}
+.revealInfo .revealInfoItem .revealInfoItemRight .text3{
+	font-size:0.2rem;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	line-height:0.28rem;
+	text-align: right;
+	margin-top: 0.19rem;
+}
+.revealInfo .revealInfoItem .revealInfoItemRight .text4{
+	margin-top: 0.53rem;
+}
+/* 中间的加密信息 */
+.encryptionInfo{
+	width: 100%;
+	height: 7.19rem;
+	overflow: hidden;
+	background-color: #26282F;
+	
+}
+.encryptionInfo .encryptionInfoContents{
+	width: 11.6rem;
+	height: 3.72rem;
+	margin: 1.65rem auto 0;
+}
+.encryptionInfo .encryptionInfoContents .encryptionInfoContentsLeft{
+	width: 5.16rem;
+	height: 100%;
+	overflow: hidden;
+}
+.encryptionInfo .encryptionInfoContents .encryptionInfoContentsLeft .text1{
+	font-size:0.3rem;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	line-height:0.42rem;
+	margin-bottom: 0.47rem;
+}
+.encryptionInfo .encryptionInfoContents .encryptionInfoContentsLeft .text2{
+	font-size:0.2rem;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	line-height:0.3rem;
+	margin-bottom: 0.85rem;
+}
+.encryptionInfo .encryptionInfoContents .encryptionInfoContentsLeft .text3{
+	
+}
+
+.encryptionInfo .encryptionInfoContents .encryptionInfoContentsRight{
+	width: 6.44rem;
+	height: 100%;
+	background: url(../images/encryptionInfo.png) no-repeat center;
+	background-size: cover;
+}
+
+/* 底部关于我们 */
+.footer{
+	width: 100%;
+	height: 3.4rem;
+	background: url(../images/footerBg.png) no-repeat center;
+	background-size: cover;
+	overflow: hidden;
+	margin-bottom: 1.48rem;
+}
+.footer .footerContents{
+	width: 12rem;
+	height: 2.58rem;
+	margin: 0.81rem auto 0;
+}
+.footer .footerContents .footerTop{
+	width: 100%;
+	height: 1.83rem;
+}
+.footer .footerContents .footerTop .footerTopLeft{
+	width: 4.54rem;
+	height: 100%;
+}
+.footer .footerContents .footerTop .footerTopLeft .footerLogo{
+	width: 2.20rem;
+	height: 0.64rem;
+	background: url(../images/footLogo.png) no-repeat center;
+	background-size: cover;
+	margin-bottom: 0.4rem;
+}
+.footer .footerContents .footerTop .footerTopLeft .footerStatement1{
+	color:rgba(22,23,27,1);
+	line-height:0.22rem;
+	margin-bottom: 0.18rem;
+}
+.footer .footerContents .footerTop .footerTopLeft .footerStatement2{
+	color:rgba(22,23,27,1);
+	line-height:0.19rem;
+}
+.footer .footerContents .footerTop .footerTopMiddle{
+	width: 1.14rem;
+	height: 100%;
+	margin: 0 1.8rem  0 1.7rem;
+	cursor: pointer;
+}
+.footer .footerContents .footerTop .footerTopMiddle .text1{
+	font-size:0.2rem;
+	font-weight:800;
+	color:rgba(22,23,27,1);
+	line-height:0.28rem;
+	letter-spacing:0.02rem;
+	margin-top: 0.36rem;
+}
+.footer .footerContents .footerTop .footerTopMiddle .text2{
+	font-size:0.16rem;
+	font-weight:500;
+	color:rgba(22,23,27,1);
+	line-height:0.22rem;
+	letter-spacing:0.02rem;
+	margin-top: 0.38rem;
+	cursor: pointer;
+}
+.footer .footerContents .footerTop .footerTopMiddle .text3{
+	font-size:0.16rem;
+	font-weight:500;
+	color:rgba(22,23,27,1);
+	line-height:0.22rem;
+	letter-spacing:0.02rem;
+	margin-top: 0.19rem;
+}
+.footer .footerContents .footerTop .footerTopRight{
+	width: 2.8rem;
+	height: 100%;
+}
+.footer .footerContents .footerTop .footerTopRight .text1{
+	font-size:0.2rem;
+	font-weight:800;
+	color:rgba(22,23,27,1);
+	line-height:0.28rem;
+	letter-spacing:0.02rem;
+	margin-top: 0.36rem;
+}
+.footer .footerContents .footerTop .footerTopRight .text2{
+	margin-top: 0.27rem;
+}
+.footer .footerContents .footerTop .footerTopRight .text2 .wxLogo{
+	width: 1.32rem;
+	height: 0.6rem;
+	background: url(../images/wxLogo.png) no-repeat center;
+	background-size: cover;
+}
+.footer .footerContents .footerTop .footerTopRight .text2 .zfbLogo{
+	width: 1.32rem;
+	height: 0.6rem;
+	background: url(../images/zfbLogo.png) no-repeat center;
+	background-size: cover;
+	margin-left: 0.16rem;
+}
+.footer .footerContents .footerBtm{
+	width: 100%;
+	height: 0.75rem;
+	font-size:0.14rem;
+	font-family:Roboto-Regular,Roboto;
+	font-weight:400;
+	color:rgba(28,28,28,1);
+	line-height: 0.16rem;
+	letter-spacing:0.01rem;
+	text-align: center;
+	padding-top: 0.23rem;
+	box-sizing: border-box;
+}
+
+
+
+/* 游戏items */
+.gameItems{
+	width: 2.28rem;
+	height: 3.13rem;
+}
+.gameItems .items{
+	width: 2.06rem;
+	height: 100%;
+	margin-left: 0.22rem;
+	position: relative;
+	background-color: olive;
+}
+.gameItems .items .leftIcon{
+	width: 1.2rem;
+	height: 0.6rem;
+	position: absolute;
+	left: -0.2rem;
+	top: 1.8rem;
+	z-index: 5;
+	text-align: center;
+	background: url(../images/label1.png) no-repeat center;
+	background-size: cover;
+}
+.leftIcon>div{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 0.4rem;
+	
+}
+.gameItems .items .btmText{
+	width: 100%;
+	height: 0.3rem;
+	position: absolute;
+	bottom: 0.3rem;
+	z-index: 5;
+	padding:0 0.3rem;
+	box-sizing: border-box;
+}
+.gameItems .items .btmText span{
+	
+	height: 0.3rem;
+	float: left;
+	margin-right: 0.2rem;
+	line-height: 0.3rem;
+}
+.gameItems .items .itemsMask{
+	width: 100%;
+	height: 0.9rem;
+	background: url(../images/qunimabitu.png) no-repeat center;
+	background-size: cover;
+	position: absolute;
+	bottom: 0;
+	z-index: 3;
+}
+/* 竖图游戏 */
+.verticalGameItems{
+	width: 1.64rem;
+	height: 2.45rem;
+	padding-left: 0.05rem;
+	position: relative;
+	margin-right: 0.25rem;
+	margin-bottom: 0.47rem;
+}
+.verticalGameItems .imgItems{
+	width:1.59rem;
+	height:2.24rem;
+	border-radius: 0.04rem 0.04rem  0 0;
+	position: relative;
+	overflow: hidden;
+	background: url(../images/编组%2040备份%2013.png) no-repeat center;
+	background-size: cover;
+}
+.verticalGameItems .imgItems .btmBgImgs{
+	width: 101%;
+	height: 1.63rem;
+	background: url(../images/btmBgImgs.png) no-repeat center;
+	background-size: cover;
+	position: absolute;
+	bottom: -0.55rem;
+}
+.verticalGameItems .btmBgCloor{
+	width:1.59rem;
+	height:0.21rem;
+	border-radius:0 0 0.04rem 0.04rem;
+	background-color: #373b47;
+}
+.verticalGameItems .topBg{
+	width:0.53rem;
+	height:0.23rem;
+	background:url(../images/label2.png) no-repeat center;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0.01rem;
+	font-size:0.15rem;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	line-height:0.23rem;
+}
+.verticalGameItems .btmText{
+	width: 100%;
+	height: 0.23rem;
+	position: absolute;
+	left: 0;
+	bottom: 0.15rem;
+}
+.verticalGameItems .btmText .text1{
+	font-size:0.19rem;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	line-height:0.23rem;
+	margin-left: 0.16rem;
+}
+.verticalGameItems .btmText .text2{
+	font-size:0.13rem;
+	font-weight:bold;
+	color:rgba(255,255,255,0.4);
+	line-height:0.23rem;
+	margin-left: 0.09rem;
+}
+
+.verticalGameItems:nth-of-type(4n){
+	margin-right: 0;
+}
+.verticalGameItems:nth-of-type(n+5){
+	margin-bottom: 0;
+}
+
+
+.imgBlock{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+
+
+/* // 文字颜色 */
+.color1{color: rgba(164, 208, 9, 1);}
+.color2{color: rgba(255, 255, 255, 1);}
+.color3{color: rgba(172, 220, 245, 1);}
+/* //背景颜色   */
+.back1{background-color:rgba(11,39,58,1);}
+.back2{background-color:rgba(76,107,34,1);}
+.back3{background-color:rgba(3,23,38,1);}
+.back4NoHover{background-color:rgba(22,32,45,1);}
+.back4Active{background-color:rgba(17,24,34,1);}
+.back4{background-color:rgba(22,32,45,1);}
+.back4:hover{background-color:rgba(17,24,34,1);}
+.back5{background-color:rgba(39, 65, 86, 1);}
+
+
+.greenSkin.bodyBg{
+background-color:rgba(11,39,58,1);
+}
+.textDecor{text-decoration:line-through;}

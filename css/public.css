@@ -1,0 +1,171 @@
+/*公共样式--开始*/
+html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+    margin: 0;
+    padding: 0;
+}
+*{box-sizing: border-box;}
+html, body {
+    min-height: 100%;
+	font-size:100px;
+}
+body {
+    font-family: "Microsoft YaHei";
+    color:rgba(255,255,255,1);
+}
+h1, h2, h3, h4, h5, h6{font-weight:normal;}
+ul,ol {
+    list-style: none;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #232323;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+input, textarea {
+    outline: none;
+    border: none;
+}
+textarea {
+    resize: none;
+    overflow: auto;
+}
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after {
+    content: ".";
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+    overflow:hidden;
+}
+.fl {
+    float: left
+}
+.fr {
+    float: right
+}
+.tl {
+    text-align: left;
+}
+.tc {
+    text-align: center
+}
+.tr {
+    text-align: right;
+}
+.db{display: block;}
+.dn{display: none;}
+.vb{visibility: visible;}
+.vn{visibility: hidden;}
+.ellipse {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ellipse2{
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.ellipse3{
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+.ellipse4{
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
+.inline{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+/* 文本颜色 */
+.textColor{color: rgba(255, 255, 255, 1)}
+.textColor04{color: rgba(255, 255, 255, 0.4)}
+.textColor06{color: rgba(255, 255, 255, 0.6)}
+/* 背景颜色 */
+.bgColor1{background-color: rgba(38, 40, 47, 1);} /* 全部大盒子背景色 */ 
+.bgColor2{background-color: rgba(22, 23, 27, 1);} /* 上方模块的背景色 */
+.bgColor3{background-color: rgba(38,40,47,1);} /* 上下按钮点击的背景色 */
+/* 点击的变化效果 */
+.btnBg_active{background:linear-gradient(44deg,rgba(255,0,54,1) 0%,rgba(255,34,103,1) 100%);}
+.btnBg_active:active{background: rgba(229, 0, 48, 1)}
+/* 定位 */
+.posR{position: relative;}
+.posA{position: absolute;}
+.posLt0{left: 0;top: 0;}
+.posLb0{left: 0;bottom: 0;}
+.posLb400{left: 4rem;bottom: 0;}
+/* 定位层级 */
+.zIndex_1{z-index: -1;}
+.zIndex1{z-index: 1;}
+.zIndex2{z-index: 2;}
+.zIndex3{z-index: 3;}
+.zIndex4{z-index: 4;}
+.zIndex5{z-index: 5;}
+.zIndex6{z-index: 6;}
+/* 图片撑满 */
+.imgBlock{width: 100%;height: 100%;display: block;}
+/* 透明度 */
+.opc01{opacity: 0.1;}
+.opc015{opacity: 0.15;}
+.color_white_1{color: rgba(255,255,255,1);}
+.color_white_02{color: rgba(255,255,255,0.2);}
+.color_white_04{color: rgba(255,255,255,0.4);}
+.color_white_06{color: rgba(255,255,255,0.6);}
+.color_white_08{color: rgba(255,255,255,0.8);}
+
+
+.ft12{font-size: 0.12rem;}
+.ft14{font-size: 0.14rem;}
+.ft16{font-size: 0.16rem;}
+.ft17{font-size: 0.17rem;}
+.ft18{font-size: 0.18rem;}
+.ft20{font-size: 0.2rem;}
+.ft22{font-size: 0.22rem;}
+.ft24{font-size: 0.24rem;}
+.ft26{font-size: 0.26rem;}
+.ft28{font-size: 0.28rem;}
+.ft30{font-size: 0.30rem;}
+.ft32{font-size: 0.32rem;}
+.ft34{font-size: 0.34rem;}
+.ft36{font-size: 0.36rem;}
+.ft38{font-size: 0.38rem;}
+
+.ft_weight{font-weight: bold;}
+/*文本中划线*/
+.textDecor{text-decoration:line-through;}
+
+.margin_left_auto{margin-left: auto;}
+.margin_left_8{margin-left: 0.08rem;}
+.margin_left_12{margin-left: 0.12rem;}
+
+.margin_right_8{margin-right: 0.08rem;}
+.margin_right_12{margin-right: 0.12rem;}
+.margin_right_38{margin-right: 0.38rem !important;}
+.margin_right_auto{margin-right: auto;}
+
+.opc4{opacity: 0.4;}
+.opc4:hover{opacity: 1;}

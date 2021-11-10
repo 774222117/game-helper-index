@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="W4PLAY,天天都玩好游戏，折扣游戏，电脑游戏">
+	<meta name="keywords" content="W4PLAY,天天都玩好游戏">
+	<meta name="generator" content="w4play">
+	<title>W4PLAY-天天都玩好游戏</title>
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<style>
+		/* 安装按钮复用 */
+		.downLoadBtn{
+			width: 3.8rem;
+			height: 1.2rem;
+			display: block;
+		}
+		.downBtnClick{cursor: pointer;}
+		.downLoadBtn.marL>div:nth-of-type(1){margin-left: 0;}
+		.downLoadBtn.marM>div:nth-of-type(1){margin: 0 auto;}
+		.downLoadBtn.marR>div:nth-of-type(1){margin-left: 0.32rem;}
+		.downLoadBtn>div:nth-child(1){
+			width:3.47rem;
+			height:0.8rem;
+			line-height: 0.8rem;
+			background:linear-gradient(270deg,rgba(41,84,197,1) 0%,rgba(49,175,255,1) 100%);
+			border-radius:3px;
+			text-align: center;
+			position: relative;
+			font-size:0.22rem;
+			font-weight:800;
+			color:rgba(255,255,255,1);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.downLoadIcon{
+			width: 0.24rem;
+			height: 0.27rem;
+			background: url(images/downIcon.png) no-repeat center;
+			background-size: cover;
+			margin-right: 0.1rem;
+		}
+		.downLoadBtn>div:nth-child(2){
+			width:100%;
+			height:0.2rem;
+			margin-top: 0.2rem;
+			font-size:0.14rem;
+			font-weight:400;
+			color:rgba(255,255,255,0.4);
+			line-height:0.2rem;
+			letter-spacing: 1.5px;
+		}
+	</style>
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?7d01955f539683572fa6be295e3a86c1";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+<body>
+	<!-- 最上面的背景信息等-->
+	<div class="header ft20">
+		<div class="middleContents">
+			<!-- 背景 -->
+			<div class="bgSty">
+				<div class="imgSty"><img class="imgBlock bgStyImg" src="" alt=""></div>
+				<div class="maskSty"><img class="imgBlock" src="images/headerBg1.png" alt=""></div>
+			</div>
+			<!-- 正文内容 -->
+			<div class="headerContents">
+				<div class="logo">
+					<img class="imgBlock" src="images/logo1.png" alt="">
+				</div>
+				<!-- 选项卡与文字 -->
+				<div class="gameInfo clearfix clear">
+					<div class="leftTab">
+						<div class="leftTabHeader">
+							<div class="tabItems tabActive textColor ft14 ellipse leftTabHeaderText0" data-text="0"></div>
+							<div class="tabItems textColor ft14 ellipse leftTabHeaderText1" data-text="1"></div>
+							<div class="tabItems textColor ft14 ellipse leftTabHeaderText2" data-text="2"></div>
+							<div class="tabItems textColor ft14 ellipse leftTabHeaderText3" data-text="3"></div>
+							<div class="tabItems textColor ft14 ellipse leftTabHeaderText4" data-text="4"></div>
+						</div>
+						<div class="leftTabBorderBg border_left border_right border_btm">
+							<div class="maskImg"></div>
+							<div class="imgBox">
+								<img class="gameImg gameInfoGameImg" src="" alt="">
+								<div class="gameName gameInfoGameName"></div>
+							</div>
+							<div class="footerInfo clearfix clear">
+								<div class="rebateBox fl tc gameInfoGameRebate"></div>
+								<div class="presentPriceBox fl tc gameInfoGamePresentPrice"></div>
+								<div class="originalPriceBox fl tc textDecor gameInfoGameOriginalPrice"></div>
+								<div class="lookMore fr tc downBtnClick">查看更多折扣</div>
+							</div>
+						</div>
+					</div>
+					<div class="rightInfo">
+						<div class="rightInfoText1">W4PLAY 天天都玩好游戏</div>
+						<div class="rightInfoText2">
+							<div class="rightInfoText2Icon"><img class="imgBlock" src="images/icon3.png" alt=""></div>
+							<div class="rightInfoText">无负担，3A大作低至1折</div>
+						</div>
+						<div class="rightInfoText3">
+							<div class="rightInfoText3Icon"><img class="imgBlock" src="images/icon1.png" alt=""></div>
+							<div class="rightInfoText">安心玩，来自官方正版渠道</div>
+						</div>
+						<div class="rightInfoText4">
+							<div class="rightInfoText4Icon"><img class="imgBlock" src="images/icon2.png" alt=""></div>
+							<div class="rightInfoText">先体验，新人注册限时免费领取热门游戏</div>
+						</div>
+						<div class="downBtnBox" style="margin-top: 0.24rem;">
+								<div class="down1 downLoadBtn marL" target="_blank" href="" download="">
+									<div class="downBtnClick"><div class="downLoadIcon"></div><div>立即安装</div></div>
+									<div>Windows &nbsp;7/8/8.1/10 &nbsp;&nbsp;更新： <span class="lowTimer"></span></div>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 中间的跑马灯效果-->
+	<div class="middleHorseRaceLamp ft20">
+		<div class="title">新用户注册 免费领取热门游戏</div>
+		<div class="horseRaceLamp">
+			<ul class="horseRaceLampContents" id="images-webticker"></ul>
+			<div class="horseRaceLampBgMask"></div>
+		</div>
+	</div>
+	<!-- 中间的展示信息 -->
+	<div class="revealInfo">
+		<div class="down2 ft20 marM downLoadBtn marM" target="_blank" href="" download="">
+			<div class="downBtnClick"><div class="downLoadIcon"></div><div>现在去领取</div></div>
+		</div>
+		<div class="revealInfoItem clear clearfix">
+			<div class="revealInfoItemLeft fl"></div>
+			<div class="revealInfoItemRight fl">
+				<div class="text1">售价折上折 每天都玩好游戏</div>
+				<div class="text2">假如每周都玩一款大作</div>
+				<div class="text3">预计每年可为您节省超过2000元</div>
+				<div class="text4">
+					<div class="down3 downLoadBtn marR" target="_blank" href="" download="" style="margin-left: 1.67rem;">
+						<div class="downBtnClick"><div class="downLoadIcon"></div><div>立即安装</div></div>
+						<div style="text-align: right;">Windows &nbsp;7/8/8.1/10 &nbsp;&nbsp;更新： <span class="lowTimer"></span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 中间的加密信息 -->
+	<div class="encryptionInfo">
+		<div class="encryptionInfoContents clear clearfix">
+			<div class="encryptionInfoContentsLeft fl">
+				<div class="text1">加密登陆  游戏资产保护</div>
+				<div class="text2">创新的加密型一键登录，从根源阻断游戏账号被盗风险，保护您的资产安全</div>
+				<div class="text3">
+					<div class="down4 downLoadBtn marL" target="_blank" href="" download="">
+						<div class="downBtnClick"><div class="downLoadIcon"></div><div>立即安装</div></div>
+						<div>Windows&nbsp;7/8/8.1/10 &nbsp;&nbsp;更新： <span class="lowTimer"></span></div>
+					</div>
+				</div>
+			</div>
+			<div class="encryptionInfoContentsRight fl"></div>
+		</div>
+	</div>
+	<!-- 底部关于我们 -->
+	<div class="footer">
+		<div class="footerContents">
+			<div class="footerTop clear clearfix">
+				<div class="footerTopLeft fl">
+					<div class="footerLogo"></div>
+					<div class="footerStatement1 ft16">声明：本站只提供正版游戏代充值服务，不涉及游戏发行，推广及代理</div>
+					<div class="footerStatement2 ft16">Play More Shouldn't Cost More</div>
+				</div>
+				<div class="footerTopMiddle fl">
+					<div class="text1">关于我们</div>
+					<div class="text2">公司简介</div>
+					<div class="text3">用户使用协议</div>
+				</div>
+				<div class="footerTopRight fl">
+					<div class="text1">安全支付</div>
+					<div class="text2 clear clearfix">
+						<div class="wxLogo fl"></div>
+						<div class="zfbLogo fl"></div>
+					</div>
+				</div>
+			</div>
+			<div class="footerBtm">Copyright © 2020 ️ <span class="companyName">南京云之捷科技互联有限公司  ｜  苏ICP备20031855号-1 |  027-81807180</span>  </div>
+		</div>
+	</div>
+	<div class="newTitle">
+		<div class="follow clear clearfix">
+			<div class="logoIcon logoIconBg fl">
+				<img src="images/iconLogo.png" alt="">
+			</div>
+			<div class="downInfo fl">
+				<div class="ft26 color_white_1" style="margin-bottom: 0.08rem;">现在下载，新人免费领取3A游戏！</div>
+				<div class="ft20 color_white_1">尽情享受数百款专属游戏折扣！</div>
+			</div>
+			<div class="downImg downBtnClick fl">安装领取</div>
+		</div>
+	</div>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="swiper/jquerySwiper/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.webticker.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/domin.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var appid = getQueryStringRegExp('appid') || '';
+		var channelIds = getQueryStringRegExp('channel') || '';
+		function getQueryStringRegExp(name){ 
+			var reg = new RegExp("(^|\\?|&)"+ name +"=([^&]*)(\\s|&|$)", "i");   
+			if (reg.test(location.href)) return unescape(RegExp.$2.replace(/\+/g, " ")); return ""; 
+		}; 
+		$('.lowTimer').text( getCurrentTime() )	
+		$(document).ready(function () {	    
+			$.ajax({
+				async: false, // 同步加载数据,即等到ajax执行完毕再接着执行下面的语句
+				url: onekeyfunDomin +'/channel/cdl',
+				type: 'GET', // jsonp模式只有GET是合法的
+				data: {'channelAbbr':channelIds}, // 预传参的数组
+				dataType: 'json', // 数据类型
+				jsonp: 'callback', // 指定回调函数名，与服务器端接收的一致，并回传回来
+				success: function(json){
+					$('.downBtnClick').click(function(){
+						$.ajax({
+							async: false, // 同步加载数据,即等到ajax执行完毕再接着执行下面的语句
+							url: onekeyfunDomin +'/channel/index',
+							type: 'POST', // jsonp模式只有GET是合法的
+							data: {'channelId':channelIds,'channelLogType':'DOWNLOAD'}, // 预传参的数组
+							dataType: 'json', // 数据类型
+							success: function(json){}
+						});
+						window.location.href = json.data.channelPackageAddress
+					})
+					$('.companyName').text(json.data.companyName)
+				}
+			});
+		})
+		
+		$(document).ready(function () {
+			$.ajax({
+				async: false, // 同步加载数据,即等到ajax执行完毕再接着执行下面的语句
+				url: onekeyfunDomin + '/game/landingTopHot',
+				type: 'GET', // jsonp模式只有GET是合法的
+				data: {'appids':appid}, // 预传参的数组
+				dataType: 'json', // 数据类型
+				jsonp: 'callback', // 指定回调函数名，与服务器端接收的一致，并回传回来
+				success: function(json){
+					json.data.forEach(function(v,i){
+						if(i < 5){
+							// console.log(i)
+							$('.leftTabHeaderText'+[i]).text(v.chinaName)
+						}
+					})
+					$('.gameInfoGameImg').attr('src',json.data[0].image) //图片
+					$('.gameInfoGameName').text(json.data[0].chinaName)  //名字
+					$('.gameInfoGameRebate').text( ( (json.data[0].lowPrice/json.data[0].steamPrce).toFixed(2)*10 ).toFixed(1) + '折' )  //折扣
+					$('.gameInfoGamePresentPrice').text('￥'+json.data[0].lowPrice) //现价
+					$('.gameInfoGameOriginalPrice').text('￥'+json.data[0].steamPrce) //原价
+					$('.bgStyImg').attr('src',json.data[0].libraryCapsule)//背景图片
+					$('.tabItems').on('click',function(){
+						$(this).addClass('tabActive').siblings().removeClass('tabActive')
+						var num = $(this).data('text');
+						$('.gameInfoGameImg').attr('src',json.data[num].image) //图片
+						$('.gameInfoGameName').text(json.data[num].chinaName)  //名字
+						$('.gameInfoGameRebate').text( ( (json.data[num].lowPrice/json.data[num].steamPrce).toFixed(2)*10 ).toFixed(1) + '折' )  //折扣
+						$('.gameInfoGamePresentPrice').text('￥'+json.data[num].lowPrice) //现价
+						$('.gameInfoGameOriginalPrice').text('￥'+json.data[num].steamPrce) //原价
+						$('.bgStyImg').attr('src',json.data[num].libraryCapsule)//背景图片
+					})
+				}
+			});
+		});
+	
+		$(document).ready(function () {
+			$.ajax({
+				async: false, // 同步加载数据,即等到ajax执行完毕再接着执行下面的语句
+				url: onekeyfunDomin+'/people/activity/brief',
+				type: 'GET', // jsonp模式只有GET是合法的
+				data: {'appids':appid}, // 预传参的数组
+				dataType: 'json', // 数据类型
+				jsonp: 'callback', // 指定回调函数名，与服务器端接收的一致，并回传回来
+				success: function(json){
+					var htmls1 = '';
+					json.data.forEach(function(v){
+					htmls1 +=`<li>
+						<div class="gameItems">
+							<div class="items" style="background: url(${v.image}) no-repeat center;background-size: cover;">
+								<div class="leftIcon ft14"><div>￥${v.worth}</div></div>
+								<div class="btmText ellipse">
+									<span class="ft18 color_white_1">${v.chinaName}</span>
+									
+								</div>
+								<div class="itemsMask"></div>
+							</div>
+						</div>
+					</li>`
+					// <span class="ft18 color_white_1">￥${Math.ceil(v.lowPrice)}</span>
+					// <span class="ft14 color_white_04 textDecor">￥${Math.ceil(v.steamPrce)}</span>
+					})
+					$('.horseRaceLampContents').html(htmls1)
+					$("#images-webticker").webTicker({
+						height: '3.13rem',
+						speed: 20,
+						hoverpause:false,
+						startEmpty:false,
+						duplicate: true
+					});
+				}
+			});
+		});
+
+		$(document).ready(function () {
+			$.ajax({
+				async: false, // 同步加载数据,即等到ajax执行完毕再接着执行下面的语句
+				url: onekeyfunDomin+'/game/landingTopNew',
+				type: 'GET', // jsonp模式只有GET是合法的
+				data: {'appids':appid}, // 预传参的数组
+				dataType: 'json', // 数据类型
+				jsonp: 'callback', // 指定回调函数名，与服务器端接收的一致，并回传回来
+				success: function(json){
+					var htmls2 = '';
+					json.data.forEach(function(v){
+						htmls2 += `
+						  <div class="verticalGameItems fl">
+							<div class="imgItems" style="background: url(${v.libraryCapsule}) no-repeat center;background-size: cover;">
+								<div class="btmBgImgs"></div>
+							</div>
+							<div class="btmBgCloor"></div>
+							<div class="topBg">&nbsp;${((v.lowPrice/v.steamPrce).toFixed(2)*10).toFixed(1)}折</div>
+							<div class="btmText center clearfix">
+								<div class="text1 fl">￥${Math.ceil(v.lowPrice)}</div>
+								<div class="text2 textDecor fl">￥${Math.ceil(v.steamPrce)}</div>
+							</div>
+						  </div>`
+					})  
+					$('.revealInfoItemLeft').html(htmls2)
+				}
+			});
+		});
+		
+		/**
+* @description 把当前时间转成 （年.月.日 时:分:秒）日期格式的
+* @params 无
+* @return 返回当前时间的日期格式，例如：2017.07.11 15:14:44
+ */
+function getCurrentTime(){
+    var date = new Date();  
+    var month = date.getMonth() + 1;
+
+    var strDate = date.getDate();
+    if (month >= 1 && month <= 9) {
+         month = "0" + month;
+    }
+    if (strDate >= 0 && strDate <= 9) {
+         strDate = "0" + strDate;
+    } 
+    var hours = date.getHours();
+    if (hours >=0 && hours <= 9) {
+        if (hours == 0) {
+            hours = "00";
+        } else{
+            hours = "0" + hours;
+        }
+    }
+    var minutes = date.getMinutes();
+    if (minutes >=0 && minutes <= 9) {
+        if (minutes == 0) {
+            minutes = "00";
+        } else{
+            minutes = "0" + minutes;
+        }
+    }
+    var seconds = date.getSeconds();
+    if (seconds >=0 && seconds <= 9) {
+        if (seconds == 0) {
+            seconds = "00";
+        } else{
+            seconds = "0" + seconds;
+        }
+    }
+	var currentdate = date.getFullYear()+" / "+ month+" / "+strDate;
+	// +" "+hours+":"+minutes+":"+ ":"+seconds
+	console.log(currentdate);   
+	return currentdate ;
+}
+
+	</script>
+</body>
+</html>

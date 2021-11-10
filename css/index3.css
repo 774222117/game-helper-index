@@ -1,0 +1,603 @@
+.header{
+	width: 100%;
+	height: 8.22rem;
+	background:linear-gradient(180deg,rgba(22,23,27,1) 0%,rgba(22,23,27,1) 100%);
+	position: relative;
+	overflow: hidden;
+}
+.bgSty{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+.bgSty .bgMask{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	background: url(../images/headerBg.png) no-repeat center;
+}
+.header .headerTop{
+	width: 100%;
+	height: 4.12rem;
+	margin-top: 1.14rem;
+	position: relative;
+	z-index: 11;
+}
+.header .headerTop .headerTopContents{
+	width: 12rem;
+	height: 100%;
+	margin: 0 auto;
+}
+/* 左边文字 logo */
+.headerTopContents .headerTopLeft{
+	width: 3.50rem;
+	height: 100%;
+}
+.headerTopContents .headerTopLeft .logo{
+	width: 2.66rem;
+	height: 0.75rem;
+	background: url(../images/logo.png) no-repeat center;
+	background-size: cover;
+	margin-bottom: 0.72rem;
+}
+.headerTopContents .headerTopLeft .text1{
+	font-size:0.28rem;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	line-height:0.42rem;
+	margin-bottom: 0.43rem;
+}
+.headerTopContents .headerTopLeft .text2{
+	font-size:0.18rem;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	line-height:0.28rem;
+	margin-bottom: 0.25rem;
+}
+.headerTopContents .headerTopLeft .text3{
+	font-size:0.18rem;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	line-height:0.28rem;
+	margin-bottom: 0.25rem;
+}
+.headerTopContents .headerTopLeft .text4{
+	font-size:0.18rem;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	line-height:0.28rem;
+}
+.textIcon{
+	position: relative;
+	padding-left: 0.18rem;
+}
+.textIcon::before{
+	content: '';
+	width: 0.08rem;
+	height: 0.08rem;
+	background-color: #FF0036;
+	margin-top: 0.1rem;
+	position: absolute;
+	left: 0;
+}
+/* 右边视频 */
+.headerTopContents .headerTopRight{
+	width: 8.50rem;
+	height: 100%;
+	padding-left: 0.95rem;
+	padding-top: 0.2rem;
+	box-sizing: border-box;
+}
+
+.headerTopRight .leftVideoBox{
+	width: 5.98rem;
+	height: 100%;
+}
+.headerTopRight .leftVideoBox .topVideoPlayBox{
+	width: 100%;
+	height: 3.37rem;
+	background-color: black;
+	border-radius: 0.08rem 0.08rem 0 0;
+}
+.headerTopRight .leftVideoBox .topVideoPlayBox #videos{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.headerTopRight .leftVideoBox .btmVideoInfo{
+	width: 100%;
+	height: 0.55rem;
+	background-color: #383B47;
+	display: flex;
+	align-items: center;
+	border-radius: 0 0 0.08rem 0.08rem;
+}
+.btmVideoInfo .text1{
+	width: 3.4rem;
+	font-size:0.18rem;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	line-height:0.24rem;
+	letter-spacing:0.02rem;
+	margin-left: 0.2rem;
+}
+.btmVideoInfo .text2{
+	padding: 0.05rem 0.12rem ;
+	background:linear-gradient(44deg,rgba(255,0,54,1) 0%,rgba(255,34,103,1) 100%);
+	border-radius:0.05rem;
+	font-size:0.18rem;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	line-height:0.24rem;
+	margin-left: 0.14rem;
+}
+.btmVideoInfo .text3{
+	font-size:0.24rem;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	line-height:0.24rem;
+	margin-left: 0.13rem;
+}
+.btmVideoInfo .text4{
+	font-size:0.15rem;
+	font-weight:bold;
+	color:rgba(255,255,255,0.6);
+	line-height:0.24rem;
+	margin-left: 0.08rem;
+}
+/* 右边的list */
+.rightListBox{
+	width: 1.52rem;
+	height: 100%;
+	padding-right: 0.02rem;
+	padding-top: 0.09rem;
+	background-color: #26282F;
+}
+.rightListBox .listItems{
+	width:1.45rem;
+	height:0.68rem;
+	background:rgba(14,14,14,1);
+	border-radius:0.04rem;
+	float: right;
+	cursor: pointer;
+	margin-bottom: 0.09rem;
+}
+.rightListBox .listItems>img{
+	border-radius: 0.04rem;
+}
+.listItems.active{
+	border: 1px solid rgba(255,0,54,1);
+	position: relative;
+}
+.active::before{
+	content: '';
+	width: 0rem;
+	height: 0rem;
+	position: absolute;
+	left: -0.06rem;
+	top: calc(50% - 0.04rem);
+	border-width:0.06rem 0.06rem 0.06rem 0;
+    border-style:solid;
+    border-color:transparent rgba(255,0,54,1) transparent transparent;/*透明 灰 透明 透明 */
+}
+.header .downBtnBox{
+	width: 100%;
+	height: 2rem;
+	position: relative;
+    z-index: 1;
+}
+.header .downBtnBox .down1{
+	margin: 0.68rem auto 0;
+}
+/* 中间的跑马灯效果 */
+.middleHorseRaceLamp{
+	width: 100%;
+	height: 5.29rem;
+	overflow: hidden;
+	background-color: rgba(38,40,47,1);
+}
+.middleHorseRaceLamp .title{  /* 跑马灯标题 */
+	width: 4.14rem;
+	height: 0.42rem;
+	line-height: 0.42rem;
+	font-size: 0.3rem;
+	margin: 0.91rem auto 0.41rem;
+}
+
+.middleHorseRaceLamp .horseRaceLamp{  /* 跑马灯效果盒子 */
+	width: 100%;
+	height: 3.49rem;
+	position: relative;
+} 
+.middleHorseRaceLamp .horseRaceLampContents{  /* 跑马灯内容盒子 */
+	
+}
+.middleHorseRaceLamp .horseRaceLampBgMask{ /* 跑马灯遮罩盒子 */
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: -0.02rem;
+	z-index: 9;
+	background: url(../images/horseRaceLampBgMask.png) no-repeat center;
+	background-size: cover;
+}
+
+/* 中间的展示信息 */
+.revealInfo{
+	width: 100%;
+	height: 13.89rem;
+	overflow: hidden;
+	background:#26282F url(../images/revealInfoBg.png) no-repeat center;
+	background-size: cover;
+}
+.revealInfo .down2{
+	margin: 0.2rem auto 0;
+}
+.revealInfo .revealInfoItem{
+	width: 12.83rem;
+	height: 5.37rem;
+	margin: 5.52rem 0 0 3.64rem;
+}
+.revealInfo .revealInfoItem .revealInfoItemLeft{
+	width: 7.33rem;
+	height: 100%;
+}
+.revealInfo .revealInfoItem .revealInfoItemRight{
+	width: 5.47rem;
+	height: 100%;
+	overflow: hidden;
+}
+.revealInfo .revealInfoItem .revealInfoItemRight .text1{
+	font-size:0.3rem;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	line-height:0.42rem;
+	text-align: right;
+	margin-top: 1.24rem;
+}
+.revealInfo .revealInfoItem .revealInfoItemRight .text2{
+	font-size:0.2rem;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	line-height:0.28rem;
+	text-align: right;
+	margin-top: 0.19rem;
+}
+.revealInfo .revealInfoItem .revealInfoItemRight .text3{
+	font-size:0.2rem;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	line-height:0.28rem;
+	text-align: right;
+	margin-top: 0.19rem;
+}
+.revealInfo .revealInfoItem .revealInfoItemRight .text4{
+	margin-top: 0.53rem;
+}
+/* 中间的加密信息 */
+.encryptionInfo{
+	width: 100%;
+	height: 7.19rem;
+	overflow: hidden;
+	background-color: #26282F;
+	
+}
+.encryptionInfo .encryptionInfoContents{
+	width: 11.6rem;
+	height: 3.72rem;
+	margin: 1.65rem auto 0;
+}
+.encryptionInfo .encryptionInfoContents .encryptionInfoContentsLeft{
+	width: 5.16rem;
+	height: 100%;
+	overflow: hidden;
+}
+.encryptionInfo .encryptionInfoContents .encryptionInfoContentsLeft .text1{
+	font-size:0.3rem;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	line-height:0.42rem;
+	margin-bottom: 0.47rem;
+}
+.encryptionInfo .encryptionInfoContents .encryptionInfoContentsLeft .text2{
+	font-size:0.2rem;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	line-height:0.3rem;
+	margin-bottom: 0.85rem;
+}
+.encryptionInfo .encryptionInfoContents .encryptionInfoContentsLeft .text3{
+	
+}
+
+.encryptionInfo .encryptionInfoContents .encryptionInfoContentsRight{
+	width: 6.44rem;
+	height: 100%;
+	background: url(../images/encryptionInfo.png) no-repeat center;
+	background-size: cover;
+}
+
+/* 底部关于我们 */
+.footer{
+	width: 100%;
+	height: 3.4rem;
+	background: url(../images/footerBg.png) no-repeat center;
+	background-size: cover;
+	overflow: hidden;
+}
+.footer .footerContents{
+	width: 12rem;
+	height: 2.58rem;
+	margin: 0.81rem auto 0;
+}
+.footer .footerContents .footerTop{
+	width: 100%;
+	height: 1.83rem;
+}
+.footer .footerContents .footerTop .footerTopLeft{
+	width: 4.54rem;
+	height: 100%;
+}
+.footer .footerContents .footerTop .footerTopLeft .footerLogo{
+	width: 2.20rem;
+	height: 0.64rem;
+	background: url(../images/footLogo.png) no-repeat center;
+	background-size: cover;
+	margin-bottom: 0.4rem;
+}
+.footer .footerContents .footerTop .footerTopLeft .footerStatement1{
+	color:rgba(22,23,27,1);
+	line-height:0.22rem;
+	margin-bottom: 0.18rem;
+}
+.footer .footerContents .footerTop .footerTopLeft .footerStatement2{
+	color:rgba(22,23,27,1);
+	line-height:0.19rem;
+}
+.footer .footerContents .footerTop .footerTopMiddle{
+	width: 1.14rem;
+	height: 100%;
+	margin: 0 1.8rem  0 1.7rem;
+}
+.footer .footerContents .footerTop .footerTopMiddle .text1{
+	font-size:0.2rem;
+	font-weight:800;
+	color:rgba(22,23,27,1);
+	line-height:0.28rem;
+	letter-spacing:0.02rem;
+	margin-top: 0.36rem;
+}
+.footer .footerContents .footerTop .footerTopMiddle .text2{
+	font-size:0.16rem;
+	font-weight:500;
+	color:rgba(22,23,27,1);
+	line-height:0.22rem;
+	letter-spacing:0.02rem;
+	margin-top: 0.38rem;
+}
+.footer .footerContents .footerTop .footerTopMiddle .text3{
+	font-size:0.16rem;
+	font-weight:500;
+	color:rgba(22,23,27,1);
+	line-height:0.22rem;
+	letter-spacing:0.02rem;
+	margin-top: 0.19rem;
+}
+.footer .footerContents .footerTop .footerTopRight{
+	width: 2.8rem;
+	height: 100%;
+}
+.footer .footerContents .footerTop .footerTopRight .text1{
+	font-size:0.2rem;
+	font-weight:800;
+	color:rgba(22,23,27,1);
+	line-height:0.28rem;
+	letter-spacing:0.02rem;
+	margin-top: 0.36rem;
+}
+.footer .footerContents .footerTop .footerTopRight .text2{
+	margin-top: 0.27rem;
+}
+.footer .footerContents .footerTop .footerTopRight .text2 .wxLogo{
+	width: 1.32rem;
+	height: 0.6rem;
+	background: url(../images/wxLogo.png) no-repeat center;
+	background-size: cover;
+}
+.footer .footerContents .footerTop .footerTopRight .text2 .zfbLogo{
+	width: 1.32rem;
+	height: 0.6rem;
+	background: url(../images/zfbLogo.png) no-repeat center;
+	background-size: cover;
+	margin-left: 0.16rem;
+}
+.footer .footerContents .footerBtm{
+	width: 100%;
+	height: 0.75rem;
+	font-size:0.14rem;
+	font-family:Roboto-Regular,Roboto;
+	font-weight:400;
+	color:rgba(28,28,28,1);
+	line-height: 0.16rem;
+	letter-spacing:0.01rem;
+	text-align: center;
+	padding-top: 0.23rem;
+	box-sizing: border-box;
+}
+
+/* 安装按钮复用 */
+.downLoadBtn{
+	width: 3.8rem;
+	height: 1.2rem;
+	display: block;
+}
+.downBtnClick{cursor: pointer;}
+.downLoadBtn.marL>div:nth-of-type(1){margin-left: 0;}
+.downLoadBtn.marM>div:nth-of-type(1){margin: 0 auto;}
+.downLoadBtn.marR>div:nth-of-type(1){margin-left: 0.32rem;}
+.downLoadBtn>div:nth-child(1){
+	width:3.47rem;
+	height:0.8rem;
+	line-height: 0.8rem;
+	background:linear-gradient(44deg,rgba(255,0,54,1) 0%,rgba(255,34,103,1) 100%);
+	border-radius:3px;
+	text-align: center;
+	position: relative;
+	font-size:0.22rem;
+	font-weight:800;
+	color:rgba(255,255,255,1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.downLoadIcon{
+	width: 0.24rem;
+	height: 0.27rem;
+	background: url(../images/downIcon.png) no-repeat center;
+	background-size: cover;
+	margin-right: 0.1rem;
+}
+.downLoadBtn>div:nth-child(2){
+	width:100%;
+	height:0.2rem;
+	margin-top: 0.2rem;
+	font-size:0.14rem;
+	font-weight:400;
+	color:rgba(255,255,255,0.4);
+	line-height:0.2rem;
+	letter-spacing: 1.5px;
+}
+
+/* 游戏items */
+.gameItems{
+	width: 2.28rem;
+	height: 3.13rem;
+}
+.gameItems .items{
+	width: 2.06rem;
+	height: 100%;
+	margin-left: 0.22rem;
+	position: relative;
+	background-color: olive;
+}
+.gameItems .items .leftIcon{
+	width: 0.8rem;
+	height: 0.5rem;
+	position: absolute;
+	left: -0.2rem;
+	top: 1.8rem;
+	z-index: 5;
+	text-align: center;
+	background: url(../images/label1.png) no-repeat center;
+	background-size: cover;
+}
+.leftIcon>div{
+	width: 100%;
+	height: 100%;
+	line-height: 0.25rem;
+}
+.gameItems .items .btmText{
+	width: 100%;
+	height: 0.3rem;
+	position: absolute;
+	bottom: 0.3rem;
+	z-index: 5;
+	padding-left: 0.3rem;
+	box-sizing: border-box;
+}
+.gameItems .items .btmText span{
+	
+	height: 0.3rem;
+	float: left;
+	margin-right: 0.2rem;
+	line-height: 0.3rem;
+}
+.gameItems .items .itemsMask{
+	width: 100%;
+	height: 0.9rem;
+	background: url(../images/qunimabitu.png) no-repeat center;
+	background-size: cover;
+	position: absolute;
+	bottom: 0;
+	z-index: 3;
+}
+/* 竖图游戏 */
+.verticalGameItems{
+	width: 1.64rem;
+	height: 2.45rem;
+	padding-left: 0.05rem;
+	position: relative;
+	margin-right: 0.25rem;
+	margin-bottom: 0.47rem;
+}
+.verticalGameItems .imgItems{
+	width:1.59rem;
+	height:2.24rem;
+	border-radius: 0.04rem 0.04rem  0 0;
+	position: relative;
+	overflow: hidden;
+	background: url(../images/编组%2040备份%2013.png) no-repeat center;
+	background-size: cover;
+}
+.verticalGameItems .imgItems .btmBgImgs{
+	width: 101%;
+	height: 1.63rem;
+	background: url(../images/btmBgImgs.png) no-repeat center;
+	background-size: cover;
+	position: absolute;
+	bottom: -0.55rem;
+}
+.verticalGameItems .btmBgCloor{
+	width:1.59rem;
+	height:0.21rem;
+	border-radius:0 0 0.04rem 0.04rem;
+	background-color: #373b47;
+}
+.verticalGameItems .topBg{
+	width:0.53rem;
+	height:0.23rem;
+	background:url(../images/label2.png) no-repeat center;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0.01rem;
+	font-size:0.15rem;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	line-height:0.23rem;
+}
+.verticalGameItems .btmText{
+	width: 100%;
+	height: 0.23rem;
+	position: absolute;
+	left: 0;
+	bottom: 0.15rem;
+}
+.verticalGameItems .btmText .text1{
+	font-size:0.19rem;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	line-height:0.23rem;
+	margin-left: 0.16rem;
+}
+.verticalGameItems .btmText .text2{
+	font-size:13px;
+	font-weight:bold;
+	color:rgba(255,255,255,0.4);
+	line-height:0.23rem;
+	margin-left: 0.09rem;
+}
+
+.verticalGameItems:nth-of-type(4n){
+	margin-right: 0;
+}
+.verticalGameItems:nth-of-type(n+5){
+	margin-bottom: 0;
+}

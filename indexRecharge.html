@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="description" content="W4PLAY,天天都玩好游戏，折扣游戏，电脑游戏">
+		<meta name="keywords" content="W4PLAY,天天都玩好游戏">
+		<meta name="generator" content="w4play">
+		<title>W4PLAY-天天都玩好游戏</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/Rechargeindex.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<style type="text/css">
+
+		</style>
+	</head>
+	<body>		
+		<!-- 头部logo -->
+		<div id="head" class="container">
+			<div class="logo"></div>
+			<div class="logolighting"></div>
+			<div class="text1 ft14">首页</div>
+			<div class="text2 ft14">账户充值</div>
+		</div>
+		
+		<!-- 中间信息和轮播 -->
+		<div class="banner container">
+			<div class="recharge">
+				<div class="title">
+					<div class="text3 ft18">账户充值</div>
+				</div>
+				<div class="center">
+					<div class="changePrice ft14">选择金额</div>
+					<div class="priceBox1">
+						<div class="ft28">6<span class="ft18">元</span></div>
+						<div class="ft28">18<span class="ft18">元</span></div>
+						<div class="ft28">68<span class="ft18">元</span></div>
+						<div class="ft28">128<span class="ft18">元</span></div>
+					</div>
+					<div class="priceBox2">
+						<div class="ft28">648<span class="ft18">元</span></div>
+						<div>
+							<input type="text" class="custom ft16" placeholder="自定义充值金额" style="background-color: #051824;color: #FFFFFF;padding-left: 0.3rem;">
+						</div>
+					</div>
+					<div class="text4 ft18">账户确认</div>
+				</div>
+				<div class="bottom">
+					<div class="text5 ft14">输入账号</div>
+					<div class="account">
+						<input type="text" class="account1">
+					</div>
+					<div class="text6 ft14">重复账号</div>
+					<div class="reaccount">
+						<input type="text" class="account2">
+					</div>
+					<div class="readyBtn ft20">确定充值</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 底部 -->
+		<div class="companyInfo container">
+			<div class="companyInfoBox">
+				<div class="w4logo">
+					<div class="logo"></div>
+					<div class="english ft14">Play More Shouldn't Cost More</div>
+				</div>
+				<div class="about">
+					<div class="aboutUs ft16 ft_weight">关于我们 ｜ 公司简介 ｜ 用户使用协议</div>
+					<div class="statement ft14" style="margin-top: 12px;">声明：本站只提供正版游戏代充值服务，不涉及游戏发行，推广及代理</div>
+					<div class="company ft14" style="margin-top: 23px;">
+						<a href="https://beian.miit.gov.cn">Copyright © 2020&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+						
+						<a href="https://beian.miit.gov.cn" class="companyName" target="_blank">
+							南京云之捷互联科技有限公司｜苏ICP备20031855号-1｜ICP增值业务许可：苏B2-20200893
+						</a>
+						<span class="companyInfo1"></span>
+						<a href="https://beian.miit.gov.cn" class="companyName1"></a>
+						<span class="companyInfo2"></span>
+						<a href="https://beian.miit.gov.cn" class="companyName2"></a>
+					</div>
+				</div>
+				<div class="payfor">
+					<p class="ft16 ft_weight" style="opacity: 0.8;">安全支付</p>
+					<div class="wechat"></div>
+					<div class="alipay"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="js/domin.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+	<script type="text/javascript" src="js/jquery.webticker.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// 鼠标选中价格改变价格样式
+			$('.priceBox1 div').on('click',function(){
+				$(this).addClass('ischange').siblings().removeClass('ischange')
+				$('.priceBox2 div').eq(0).removeClass('ischange')
+			})
+			$('.priceBox2 div').eq(0).on('click',function(){
+				$(this).addClass('ischange')
+				$('.priceBox1 div').removeClass('ischange')
+			})
+			$('.priceBox2 div').eq(1).on('click',function(){
+				$('.priceBox1 div').removeClass('ischange')
+				$('.priceBox2 div').eq(0).removeClass('ischange')
+			})
+		})
+		
+	</script>
+</html>
